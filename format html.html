@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="stylecss.css">
+</head>
+<body>
+   <main class="auth-container">
+        <section class="auth-banner">
+            <div class="banner-overlay"></div>
+            
+            <div class="banner-center-content">
+                <div class="nk-logo-large">
+                    <span class="nk-logo-text-large">NK</span>
+                </div>
+
+                <div class="banner-text-group">
+                    <h1 class="banner-title">Selamat Datang di NK Digital Ecosystem</h1>
+                    <p class="banner-subtitle">Solusi manajemen dan inovasi terpadu untuk mengembangkan portofolio serta kolaborasi profesional Anda.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="auth-form-wrapper">
+            <div class="form-container">
+                <header class="form-header">
+                    <div class="brand-identity">
+                        <div class="nk-logo-box">
+                            <span class="nk-logo-text">NK</span>
+                        </div>
+                        <span class="company-name">NK Corporation</span>
+                    </div>
+                    <h2 class="form-title">Selamat Datang Kembali</h2>
+                    <p class="form-subtitle">Silakan masukkan detail akun Anda untuk melanjutkan.</p>
+                </header>
+
+                <div class="sso-group">
+                    <button type="button" class="btn-sso" aria-label="Sign in dengan Google">
+                        <img src="images.png" alt="" class="sso-icon" aria-hidden="true" width="20" height="20">
+                        <span>Sign in with Google</span>
+                    </button>
+                </div>
+
+                <div class="divider">
+                    <span class="divider-text">atau</span>
+                </div>
+
+                <form action="#" method="POST" class="auth-form">
+                    <div class="input-group">
+                        <label for="email" class="form-label">Email atau Username</label>
+                        <input type="text" id="email" name="email" class="form-input" placeholder="nama@gmail.com" required autocomplete="username">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="label-row">
+                            <label for="password" class="form-label">Password</label>
+                            <a href="#" class="forgot-link">Lupa Password?</a>
+                        </div>
+                        <input type="password" id="password" name="password" class="form-input" placeholder="••••••••" required autocomplete="current-password">
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="remember" name="remember" class="checkbox-input">
+                            <span class="checkbox-label">Ingat saya</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Sign In</button>
+                </form>
+
+               <footer class="form-footer">
+                    <p class="signup-prompt">Belum punya akun NK? <a href="#" class="signup-link">Daftar sekarang</a></p>
+                    <p class="copyright-text">&copy; 2026 NK Corporation. All rights reserved.</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

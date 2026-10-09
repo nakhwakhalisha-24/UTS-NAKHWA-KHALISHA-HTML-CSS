@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0b0d1b;
+    color: #0d0c22;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.auth-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background-color: #0b0d1b;
+    background-image: radial-gradient(circle at center, #1b1e38 0%, #080913 100%);
+    min-height: 400px;
+    text-align: center;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(8, 9, 19, 0.3) 0%, rgba(8, 9, 19, 0.85) 100%);
+    z-index: 1;
+}
+
+.banner-center-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 520px;
+    width: 100%;
+}
+
+.nk-logo-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    background-color: #121528;
+    border: 4px solid #ffffff;
+    border-radius: 40px;
+}
+
+.nk-logo-text-large {
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.banner-text-group {
+    color: #ffffff;
+}
+
+.banner-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+.banner-subtitle {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.auth-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 3rem 1.5rem;
+    background-color: #ffffff;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-header {
+    margin-bottom: 2rem;
+}
+
+.brand-identity {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.nk-logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: #0b0d1b;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+.nk-logo-text {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.company-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0d0c22;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0d0c22;
+}
+
+.form-subtitle {
+    font-size: 0.875rem;
+    color: #6e6d7a;
+    margin-top: 0.25rem;
+}
+
+/* SSO & Form Controls */
+.btn-sso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #0d0c22;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-sso:hover {
+    background-color: #f8f9fa;
+    border-color: #ccc;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.divider-text {
+    padding: 0 1rem;
+    font-size: 0.75rem;
+    color: #6e6d7a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #0d0c22;
+}
+
+.forgot-link,
+.signup-link {
+    font-size: 0.8125rem;
+    color: #ea4c89;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forgot-link:hover,
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: #0d0c22;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #ea4c89;
+    box-shadow: 0 0 0 4px rgba(234, 76, 137, 0.25);
+}
+
+.checkbox-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.checkbox-input {
+    width: 1rem;
+    height: 1rem;
+    accent-color: #ea4c89;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    font-size: 0.875rem;
+    color: #6e6d7a;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ea4c89;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+    background-color: #d23873;
+}
+
+.form-footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.signup-prompt {
+    font-size: 0.875rem;
+    color: #6e6d7a;
+    margin-bottom: 1.5rem;
+}
+
+.copyright-text {
+    font-size: 0.8125rem;
+    color: #a0a0a0;
+    letter-spacing: -0.1px;
+
+}
+
+@media (min-width: 1024px) {
+    .auth-container {
+        flex-direction: row;
+    }
+
+    .auth-banner {
+        flex: 1.1;
+        min-height: 100vh;
+        padding: 4rem;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .auth-form-wrapper {
+        flex: 0.9;
+        padding: 4rem;
+    }
+}
